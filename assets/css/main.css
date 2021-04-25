@@ -241,6 +241,31 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/* Edu */
+
+	ul.ul-edu {
+		list-style: none;
+	}
+	
+	ul.ul-edu li {
+		position: relative;
+		padding: 0px 15px 4px 3px;
+	}
+	
+	ul.ul-edu li .description p {
+		margin: 0;
+	}
+	
+	ul.ul-edu li .description p.course {
+		font-size: 1.0rem;
+	}
+	
+	ul.ul-edu li .description p.institution {
+		font-size: 0.75rem;
+		color: rgba(0,0,0,0.6);
+		line-height: 140%;
+		}
+
 /* Container */
 
 	.container {
@@ -2644,6 +2669,14 @@ input, select, textarea {
 			width: 6.25em;
 		}
 
+		#header .icons {
+			margin: 1em 0 0 0;
+		}
+	
+			#header .icons a {
+				color: rgba(255, 255, 255, 0.4);
+			}
+
 /* Footer */
 
 	#footer .icons {
@@ -2658,6 +2691,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.4);
 		font-size: 0.8em;
 		list-style: none;
+		text-align: center;
 		margin: 1em 0 0 0;
 		padding: 0;
 	}
