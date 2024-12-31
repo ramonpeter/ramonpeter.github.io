@@ -1,14 +1,11 @@
 ---
-title: 👩🏼‍🏫 Teach academic courses
-summary: Embed videos, podcasts, code, LaTeX math, and even test students!
+title: Learn Python
+summary: Easily learn Python in 10 minutes!
 date: 2023-10-24
-math: true
-authors:
-  - admin
+type: docs
+math: false
 tags:
-  - Hugo
-  - Hugo Blox Builder
-  - Markdown
+  - Python
 image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
@@ -23,17 +20,15 @@ On this page, you'll find some examples of the types of technical content that c
 
 Teach your course by sharing videos with your students. Choose from one of the following approaches:
 
+{{< youtube D2vj0WcvH5c >}}
+
 **Youtube**:
 
-    {{</* youtube D2vj0WcvH5c */>}}
-
-{{< youtube D2vj0WcvH5c >}}
+    {{</* youtube w7Ft2ymGmfc */>}}
 
 **Bilibili**:
 
-    {{</* bilibili BV1WV4y1r7DF */>}}
-
-{{< bilibili BV1WV4y1r7DF >}}
+    {{</* bilibili id="BV1WV4y1r7DF" */>}}
 
 **Video file**
 
@@ -67,43 +62,51 @@ renders as
 
 ## Math
 
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the `math: true` option in your page's front matter, or enable math for your entire site by toggling math in your `config/_default/params.yaml` file:
+Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
 
-```yaml
-features:
-  math:
-    enable: true
-```
+To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
 
-To render _inline_ or _block_ math, wrap your LaTeX math with `$...$` or `$$...$$`, respectively.
+{{% callout note %}}
+We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
+{{% /callout %}}
 
 Example **math block**:
 
 ```latex
+{{</* math */>}}
 $$
 \gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
 $$
+{{</* /math */>}}
 ```
 
 renders as
 
+{{< math >}}
 $$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+{{< /math >}}
 
-Example **inline math** `$\nabla F(\mathbf{x}_{n})$` renders as $\nabla F(\mathbf{x}_{n})$.
+Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
 
 Example **multi-line math** using the math linebreak (`\\`):
 
 ```latex
+{{</* math */>}}
 $$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
 1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
+{{</* /math */>}}
 ```
 
 renders as
+
+{{< math >}}
 
 $$
 f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
 1-p_{0}^{*} & \text{if }k=0.\end{cases}
 $$
+
+{{< /math >}}
 
 ## Code
 
