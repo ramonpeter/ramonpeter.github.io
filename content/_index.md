@@ -16,7 +16,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: li-yang-5h_dMuX_7RE-unsplash.webp
+          filename: bg.jpeg
           filters:
             brightness: 0.4
           size: cover
@@ -25,13 +25,13 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: "15"
+        - statistic: "20"
           description: |
             Publications
-        - statistic: "1,000+"
+        - statistic: "933"
           description: |
             Citations
-        - statistic: "78"
+        - statistic: "16"
           description: |
             h-index
     design:
@@ -45,9 +45,8 @@ sections:
       title: 'Welcome 👋'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        **Specialties:** Analytics & Data, Leadership, Programming, Strategic Planning, Writing & Editing
+        I am a postdoctoral researcher at Tif Lab at the University of Milan. I work at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. My interests extend to simulation-based inference, which is crucially dependent on first-principle simulations provided by theory, as well as precision calculations.
+  
     design:
       columns: '1'
   - block: collection
