@@ -29,15 +29,6 @@ organizations:
 
 bio: Researcher at the intersection of particle physics and machine learning.
 
-interests:
-  - Generative models like GANs, normalizing flows, diffusion models or transformers
-  - Explainable and interpretable AI
-  - Simulation-based inference
-  - Monte-Carlo integration and event generation
-  - Simulation-based inference
-  - Higher-order calculations and loop integrals
-  - PDF fits
-
  Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
@@ -54,6 +45,15 @@ profiles:
     url: https://scholar.google.com/citations?user=AXezCSUAAAAJ
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-9902-578X
+
+interests:
+  - Generative models like GANs, normalizing flows, diffusion models or transformers
+  - Explainable and interpretable AI
+  - Simulation-based inference
+  - Monte-Carlo integration and event generation
+  - Simulation-based inference
+  - Higher-order calculations and loop integrals
+  - PDF fits
 
 education:
   - area: PhD Physics
