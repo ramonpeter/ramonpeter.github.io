@@ -37,8 +37,6 @@ profiles:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/ramonpeter
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/ramonwinterhalder/
   - icon: academicons/inspire
     url: https://inspirehep.net/authors/1794691
   - icon: academicons/google-scholar
