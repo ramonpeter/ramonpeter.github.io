@@ -10,8 +10,8 @@ first_name: Ramon Peter
 last_name: Winterhalder
 
 # Status emoji
-status:
-  icon: 💻
+# status:
+#   icon: 💻
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Postdoctoral Researcher in Physics
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
