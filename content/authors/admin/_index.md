@@ -47,12 +47,11 @@ profiles:
     url: https://orcid.org/0000-0002-9902-578X
 
 interests:
-  - Generative models like GANs, normalizing flows, diffusion models or transformers
+  - Generative models
   - Explainable and interpretable AI
   - Simulation-based inference
-  - Monte-Carlo integration and event generation
-  - Simulation-based inference
-  - Higher-order calculations and loop integrals
+  - Monte-Carlo generators
+  - Higher-order calculations
   - PDF fits
 
 education:
