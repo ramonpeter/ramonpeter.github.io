@@ -30,8 +30,7 @@ organizations:
 bio: I am a postdoctoral researcher at Tif Lab at the University of Milan. I work at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with neural networks. My interests extend to simulation-based inference, which is crucially dependent on first-principle simulations provided by theory, as well as precision calculations.
 
 interests:
-- Generative models like GANs, normalizing flows,
-diffusion models and architectures
+- Generative models like GANs, normalizing flows, diffusion models and architectures
 - Explainable and interpretable AI
 - Simulation-based inference
 - Monte-Carlo integration and event generation
