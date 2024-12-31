@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Ramon Winterhalder # Website name
-baseURL: 'https://example.com/' # Website URL https://www.rpwinterhalder.com/
+baseURL: 'https://www.rpwinterhalder.com/' # Website URL https://www.rpwinterhalder.com/
 
 ############################
 ## LANGUAGE
