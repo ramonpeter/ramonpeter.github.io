@@ -39,7 +39,7 @@ header:
 
 # Site footer
 footer:
-  block: sitemap
+  i_am_a_sponsor: true
   copyright:
     notice: '© {year} Ramon Winterhalder'
     # license:
