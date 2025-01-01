@@ -8,6 +8,6 @@ tags:
   - Event generation
 ---
 
-MadNIS is a Python library for neural (multi-channel) importance sampling based on PyTorch.
+MadNIS is a Python library for neural importance sampling based on PyTorch.
 
 <!--more-->
