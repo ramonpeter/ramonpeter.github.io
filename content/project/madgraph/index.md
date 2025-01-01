@@ -1,6 +1,6 @@
 ---
 title: MadGraph5_aMC@NLO
-date: 2023-10-26
+date: 2023-10-01
 external_link: https://launchpad.net/mg5amcnlo
 tags:
   - Event generator

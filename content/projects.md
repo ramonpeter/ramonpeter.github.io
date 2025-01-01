@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Research Projects
-      text: Here is a selection of projects that I am contributing and working on.
+      text: ''
       filters:
         folders:
           - project
