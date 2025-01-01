@@ -58,21 +58,24 @@ education:
     date_start: 2017-10-01
     date_end: 2020-10-31
     summary: |
-      Thesis on _How to GAN : Novel simulation methods for the LHC_. Supervised by [Tilman Plehn](https://www.thphys.uni-heidelberg.de/~plehn/).
+      Thesis on _How to GAN : Novel simulation methods for the LHC_. 
+      Supervised by [Tilman Plehn](https://www.thphys.uni-heidelberg.de/~plehn/).
 
   - area: MSc Physics
     institution: University of Freiburg
     date_start: 2014-10-01
     date_end: 2017-08-31
     summary: |
-      Thesis on _Approximations for vector-boson scattering at the LHC_. Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
+      Thesis on _Approximations for vector-boson scattering at the LHC_. 
+      Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
 
   - area: BSc Physics
     institution: University of Freiburg
     date_start: 2011-10-01
     date_end: 2014-09-30
     summary: |
-      Thesis on _Photon induced top quark pair production and dijet production at the LHC_. Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
+      Thesis on _Photon induced top quark pair production and dijet production at the LHC_. 
+      Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
 
 # work:
 #   - position: Director of Cloud Infrastructure

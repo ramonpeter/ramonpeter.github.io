@@ -35,9 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. 
-        
-        My interests span event generators, PDF fits, higher-order calculations and precision calculations.
+        My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested in event generators, PDF fits, higher-order calculations and precision calculations.
         
         Please reach out to collaborate 😃
     design:
