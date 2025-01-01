@@ -39,6 +39,7 @@ header:
 
 # Site footer
 footer:
+  block: sitemap
   copyright:
     notice: '© {year} Ramon Winterhalder'
     # license:
