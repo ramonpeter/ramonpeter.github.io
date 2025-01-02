@@ -10,6 +10,8 @@ appearance:
   mode: light
   color: blue
 
+citation_style: MLA
+
 # SEO
 marketing:
   seo:
