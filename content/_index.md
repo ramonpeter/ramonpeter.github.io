@@ -62,6 +62,8 @@ sections:
     design:
       columns: '2'
       css_class: dark
+      background:
+        color: black
   # - block: collection
   #   id: papers
   #   content:
