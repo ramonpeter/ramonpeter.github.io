@@ -69,6 +69,13 @@ education:
       Thesis on _Approximations for vector-boson scattering at the LHC_. 
       Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
 
+  - area:  Imperial College International Diploma
+    institution: Imperial College London
+    date_start: 2015-10-01
+    date_end: 2016-06-30
+    summary: |
+      Course: [Quantum Fields and Fundamental Forces](https://www.imperial.ac.uk/study/courses/postgraduate-taught/quantum-fields-fundamental-forces/)
+
   - area: BSc Physics
     institution: University of Freiburg
     date_start: 2011-10-01
@@ -87,7 +94,7 @@ work:
     summary: |2-
       Responsibilities include:
       - Development of interpretable, controllable and robust ML methods for precise PDF fitting within the NNPDF framework
-      - Development of fast and precise event generation methods for MG5AMC within the ML-based MadNIS framework
+      - Development of fast and precise event generation methods for MadGraph using the ML-based MadNIS framework
       - Teaching and supervision of students
   - position: Postdoctoral Researcher
     company_name: UCLouvain
@@ -97,7 +104,7 @@ work:
     date_end: 2024-08-31
     summary: |
       Responsibilities include:
-      - Development of fast and precise event generation methods for MG5AMC within the ML-based MadNIS framework
+      - Development of fast and precise event generation methods for MadGraph using the ML-based MadNIS framework
       - Teaching and supervision of students
 
 # # Skills
@@ -134,13 +141,17 @@ work:
 #         percent: 80
 #         icon: camera
 
-# languages:
-#   - name: English
-#     percent: 100
-#   - name: Chinese
-#     percent: 75
-#   - name: Portuguese
-#     percent: 25
+languages:
+  - name: German
+    percent: 100
+  - name: English
+    percent: 90
+  - name: Swedish
+    percent: 25
+  - name: French
+    percent: 10
+  - name: Italian
+    percent: 10
 
 # Awards.
 #   Add/remove as many awards below as you like.
