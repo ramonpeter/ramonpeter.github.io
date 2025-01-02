@@ -28,8 +28,8 @@ sections:
   #   content:
   #     title: Awards
   #     username: Ramon Winterhalder
-  - block: resume-languages
-    content:
-      title: Languages
-      username: Ramon Winterhalder
+  # - block: resume-languages
+  #   content:
+  #     title: Languages
+  #     username: Ramon Winterhalder
 ---
