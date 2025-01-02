@@ -32,7 +32,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
         I am a postdoctoral researcher at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested in:
@@ -48,7 +48,7 @@ sections:
       columns: '1'
   - block: markdown
     content:
-      title: '✉️ Contact'
+      title: 'Contact'
       subtitle: ''
       text: |-
         Physics Department  
