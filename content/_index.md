@@ -9,7 +9,7 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: resume-biography-3
+  - block: resume-biography
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: Ramon Winterhalder
@@ -35,11 +35,32 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested event generators, PDF fits, higher-order calculations and precision calculations.
-        
-        Please reach out to collaborate 😃
+        I am a postdoctoral researcher at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested in:
+        - Generative models
+        - Explainable and interpretable AI
+        - Simulation-based inference
+        - Monte Carlo generators
+        - Higher-order calculations
+        - PDF fits
+
+        Please reach out if you are interested to collaborate!
     design:
       columns: '1'
+  - block: markdown
+    content:
+      title: '✉️ Contact'
+      subtitle: ''
+      text: |
+        Address:
+        Physics Department  
+        Università degli Studi di Milano  
+        Via Celoria 16  
+        20133 Milan  
+        Italy  |
+        Mail: [ramon.winterhalder@unimi.it](mailto:ramon.winterhalder@unimi.it)
+    design:
+      columns: '2'
+      # background: dark
   # - block: collection
   #   id: papers
   #   content:

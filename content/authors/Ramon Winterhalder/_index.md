@@ -185,6 +185,6 @@ languages:
 #       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## About Me
+<!-- ## About Me
 
-I am a postdoctoral researcher at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. My interests extend to simulation-based inference, which is crucially dependent on first-principle simulations provided by theory, as well as precision calculations.
+I am a postdoctoral researcher at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. My interests extend to simulation-based inference, which is crucially dependent on first-principle simulations provided by theory, as well as precision calculations. -->
