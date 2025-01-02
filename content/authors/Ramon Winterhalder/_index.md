@@ -27,6 +27,7 @@ organizations:
   - name:  TifLab, University of Milan
     url: https://tiflab.mi.infn.it/
 
+bio: ''
 #bio: Researcher at the intersection of particle physics and machine learning.
 
  Social network links
