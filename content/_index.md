@@ -62,7 +62,7 @@ sections:
       columns: '1'
       css_class: dark
       background:
-        color: DimGray
+        color: 1E2430
   # - block: collection
   #   id: papers
   #   content:
