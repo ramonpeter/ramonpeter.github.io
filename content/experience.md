@@ -21,15 +21,15 @@ sections:
   # - block: resume-skills
   #   content:
   #     title: Skills & Hobbies
-  #     username: admin
+  #     username: Ramon Winterhalder
   #   design:
   #     show_skill_percentage: false
   # - block: resume-awards
   #   content:
   #     title: Awards
-  #     username: admin
+  #     username: Ramon Winterhalder
   - block: resume-languages
     content:
       title: Languages
-      username: admin
+      username: Ramon Winterhalder
 ---
