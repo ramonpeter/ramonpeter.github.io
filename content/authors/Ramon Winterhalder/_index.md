@@ -77,29 +77,28 @@ education:
       Thesis on _Photon induced top quark pair production and dijet production at the LHC_. 
       Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
 
-# work:
-#   - position: Director of Cloud Infrastructure
-#     company_name: GenCoin
-#     company_url: ''
-#     company_logo: ''
-#     date_start: 2021-01-01
-#     date_end: ''
-#     summary: |2-
-#       Responsibilities include:
-#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - position: Backend Software Engineer
-#     company_name: X
-#     company_url: ''
-#     company_logo: ''
-#     date_start: 2016-01-01
-#     date_end: 2020-12-31
-#     summary: |
-#       Responsibilities include:
-#       - Migrated infrastructure to a new data center
-#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+work:
+  - position: Postdoctoral Researcher
+    company_name: Università degli Studi di Milano
+    company_url: https://fisica.unimi.it/en/home
+    company_logo: ''
+    date_start: 2024-09-01
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - Development of interpretable, controllable and robust ML methods for precise PDF fitting within the NNPDF framework
+      - Development of fast and precise event generation methods for MG5AMC within the ML-based MadNIS framework
+      - Teaching and supervision of students
+  - position: Postdoctoral Researcher
+    company_name: UCLouvain
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-09-01
+    date_end: 2024-08-31
+    summary: |
+      Responsibilities include:
+      - Development of fast and precise event generation methods for MG5AMC within the ML-based MadNIS framework
+      - Teaching and supervision of students
 
 # # Skills
 # # Add your own SVG icons to `assets/media/icons/`
