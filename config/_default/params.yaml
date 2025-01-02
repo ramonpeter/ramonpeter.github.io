@@ -36,7 +36,7 @@ header:
     fixed_to_top: true
     show_search: true
     align: "right"
-    show_theme_chooser: true
+    show_theme_chooser: false
     logo:
       text: "Ramon Winterhalder"
 
