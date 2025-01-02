@@ -50,8 +50,7 @@ sections:
     content:
       title: '✉️ Contact'
       subtitle: ''
-      text: |2-
-        Address:
+      text: |-
         Physics Department  
         Università degli Studi di Milano  
         Via Celoria 16  
@@ -60,10 +59,10 @@ sections:
 
         [ramon.winterhalder@unimi.it](mailto:ramon.winterhalder@unimi.it)
     design:
-      columns: '2'
+      columns: '1'
       css_class: dark
       background:
-        color: black
+        color: DimGray
   # - block: collection
   #   id: papers
   #   content:
