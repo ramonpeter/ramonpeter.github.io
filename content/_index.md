@@ -9,7 +9,7 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: resume-biography
+  - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: Ramon Winterhalder
@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: bg.jpeg
+          filename: stacked-peaks.svg
           filters:
             brightness: 0.4
           size: cover
@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested in event generators, PDF fits, higher-order calculations and precision calculations.
+        My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested event generators, PDF fits, higher-order calculations and precision calculations.
         
         Please reach out to collaborate 😃
     design:

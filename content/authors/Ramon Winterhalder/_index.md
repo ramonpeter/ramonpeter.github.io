@@ -27,9 +27,9 @@ organizations:
   - name:  TifLab, University of Milan
     url: https://tiflab.mi.infn.it/
 
- bio: Researcher at the intersection of particle physics and machine learning.
+#bio: Researcher at the intersection of particle physics and machine learning.
 
- Social network links
+# Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
