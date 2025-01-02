@@ -12,4 +12,13 @@ publication_types:
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2408.01486
+
+tags:
+- Differentiable programming
+- Neural importance sampling
+- Event generation
+
+featured: True
+
+abstract: Differentiable programming opens exciting new avenues in particle physics, also affecting future event generators. These new techniques boost the performance of current and planned MadGraph implementations. Combining phase-space mappings with a set of very small learnable flow elements, MadNIS-Lite, can improve the sampling efficiency while being physically interpretable. This defines a third sampling strategy, complementing VEGAS and the full MadNIS.
 ---
