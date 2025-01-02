@@ -50,17 +50,18 @@ sections:
     content:
       title: '✉️ Contact'
       subtitle: ''
-      text: |
+      text: |2-
         Address:
         Physics Department  
         Università degli Studi di Milano  
         Via Celoria 16  
         20133 Milan  
-        Italy  |
-        Mail: [ramon.winterhalder@unimi.it](mailto:ramon.winterhalder@unimi.it)
+        Italy  
+
+        [ramon.winterhalder@unimi.it](mailto:ramon.winterhalder@unimi.it)
     design:
       columns: '2'
-      # background: dark
+      css_class: dark
   # - block: collection
   #   id: papers
   #   content:
