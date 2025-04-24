@@ -1,5 +1,5 @@
 ---
-title: BitHEP -- The Limits of Low-Precision ML in HEP
+title: BitHEP - The Limits of Low-Precision ML in HEP
 authors:
 - Claudius Krause
 - Daohan Wang
