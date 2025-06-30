@@ -35,7 +35,7 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        I am a postdoctoral researcher at the intersection of particle physics and machine learning. My research aims to fully establish data-driven techniques in high-energy physics and to enhance standard simulation methods with (generative) neural networks. In particular, I am interested in:
+        I am an Assistant Professor in the Physics Department at the University of Milan. My research lies at the intersection of particle physics and machine learning. I aim to advance data-driven techniques in high-energy physics and to enhance traditional simulation methods using (generative) neural networks. My interests also include simulation-based inference, which crucially depends on first-principles simulations and precision theoretical calculations. For instance, I am interested in:
         - Generative models
         - Explainable and interpretable AI
         - Simulation-based inference

@@ -85,12 +85,24 @@ education:
       Supervised by [Stefan Dittmaier](https://www.tep.physik.uni-freiburg.de/stefan-dittmaier).
 
 work:
+  - position: Assistant Professor (Tenure-Track)
+    company_name: Università degli Studi di Milano
+    company_url: https://fisica.unimi.it/en/home
+    company_logo: ''
+    date_start: 2025-07-01
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - Development of fast and precise event generation methods for MadGraph using the ML-based MadNIS framework
+      - Devolopment of the first ML event generator aka MadGraph7
+      - Development of Bayesian techniques to better quantify PDF uncertainties
+      - Teaching and supervision of students
   - position: Postdoctoral Researcher
     company_name: Università degli Studi di Milano
     company_url: https://fisica.unimi.it/en/home
     company_logo: ''
     date_start: 2024-09-01
-    date_end: ''
+    date_end: 2025-06-30
     summary: |2-
       Responsibilities include:
       - Development of interpretable, controllable and robust ML methods for precise PDF fitting within the NNPDF framework
