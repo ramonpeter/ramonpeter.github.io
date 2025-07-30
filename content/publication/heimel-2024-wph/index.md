@@ -9,6 +9,8 @@ date: '2024-08-01'
 publishDate: '2024-12-31T15:39:22.711541Z'
 publication_types:
 - article-journal
+publication: '*SciPost Phys.*'
+doi: 10.21468/SciPostPhys.18.1.017
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2408.01486
