@@ -9,9 +9,14 @@ date: '2024-01-01'
 publishDate: '2024-12-31T15:39:22.717852Z'
 publication_types:
 - article-journal
-publication: '*PoS*'
+publication: '*PoS LL2024*'
 doi: 10.22323/1.467.0059
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2405.18286
+
+tags:
+- NLO
+- Electroweak
+- Vector-boson scattering
 ---

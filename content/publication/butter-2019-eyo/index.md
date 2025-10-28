@@ -8,7 +8,7 @@ date: '2020-01-01'
 publishDate: '2024-12-31T15:39:22.817763Z'
 publication_types:
 - article-journal
-publication: '*SciPost Phys. Core*'
+publication: '*SciPost Phys. Core 3, 009*'
 doi: 10.21468/SciPostPhysCore.3.2.009
 links:
 - name: arXiv

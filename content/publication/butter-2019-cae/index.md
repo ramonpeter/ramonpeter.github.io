@@ -8,7 +8,7 @@ date: '2019-01-01'
 publishDate: '2024-12-31T15:39:22.830185Z'
 publication_types:
 - article-journal
-publication: '*SciPost Phys.*'
+publication: '*SciPost Phys.7, 075*'
 doi: 10.21468/SciPostPhys.7.6.075
 links:
 - name: arXiv

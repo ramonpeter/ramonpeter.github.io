@@ -11,4 +11,9 @@ publication_types:
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2507.21214
+
+tags:
+- Explainable AI
+- Symbolic regression
+- Shapley values
 ---

@@ -7,7 +7,7 @@ date: '2022-01-01'
 publishDate: '2024-12-31T15:39:22.787099Z'
 publication_types:
 - article-journal
-publication: '*JINST*'
+publication: '*JINST 17 P01024*'
 doi: 10.1088/1748-0221/17/01/P01024
 links:
 - name: arXiv

@@ -14,4 +14,8 @@ publication_types:
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2211.01421
+
+tags:
+- Lecture notes
+- Machine learning
 ---

@@ -11,7 +11,7 @@ date: '2024-12-01'
 publishDate: '2024-12-31T15:39:22.702243Z'
 publication_types:
 - article-journal
-publication: '*SciPost Phys. Core*'
+publication: '*SciPost Phys. Core 8, 073*'
 doi: 10.21468/SciPostPhysCore.8.4.073
 links:
 - name: arXiv
