@@ -10,7 +10,7 @@ date: '2023-10-01'
 publishDate: '2024-12-31T15:39:22.730554Z'
 publication_types:
 - article-journal
-publication: '*SciPost Phys.17. 1293*'
+publication: '*SciPost Phys.17. 129*'
 doi: 10.21468/SciPostPhys.17.5.129
 links:
 - name: arXiv
