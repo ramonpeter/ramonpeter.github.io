@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#faf8f3"/>
-  <circle cx="16" cy="16" r="10" fill="none" stroke="#1d4e89" stroke-width="2"/>
-  <circle cx="16" cy="16" r="3" fill="#1d4e89"/>
+  <rect width="32" height="32" rx="6" fill="#1d4e89"/>
+  <text x="16" y="22" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" font-weight="600" fill="#faf8f3"
+        text-anchor="middle" letter-spacing="-1">RW</text>
 </svg>
