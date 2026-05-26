@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 
-// User site (ramonpeter.github.io) lives at the domain root, so no `base`.
+// Site is served from the domain root, so no `base` is needed.
 export default defineConfig({
-  site: "https://ramonpeter.github.io",
+  site: "https://www.rpwinterhalder.com",
   trailingSlash: "ignore",
 });
