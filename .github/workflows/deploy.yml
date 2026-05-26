@@ -1,9 +1,9 @@
-name: Build & deploy site
+name: Deploy to GitHub Pages
 
 on:
   # Trigger the workflow every time you push to the default branch
   push:
-    branches: [main, master]
+    branches: [master]
   # Weekly rebuild so newly published papers are picked up from INSPIRE
   schedule:
     - cron: "0 6 * * 1" # every Monday 06:00 UTC
@@ -24,8 +24,6 @@ jobs:
         uses: actions/checkout@v6
       - name: Install, build, and upload your site
         uses: withastro/action@v6
-        # with:
-        #   node-version: 24 # defaults to 22; uncomment to pin
 
   deploy:
     needs: build
@@ -36,4 +34,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
