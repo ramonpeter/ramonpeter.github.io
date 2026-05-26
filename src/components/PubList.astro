@@ -1,0 +1,95 @@
+---
+import pubs from "../data/publications.json";
+
+interface Props {
+  limit?: number; // show only the N most recent
+}
+const { limit } = Astro.props;
+const list = limit ? pubs.slice(0, limit) : pubs;
+
+function authorLine(authors: string[]): string {
+  if (authors.length <= 6) return authors.join(", ");
+  return authors.slice(0, 5).join(", ") + ` et al. (${authors.length} authors)`;
+}
+function year(date: string | null): string {
+  return date ? date.slice(0, 4) : "";
+}
+---
+
+<ul class="pub-list">
+  {list.length === 0 && (
+    <li class="pub-empty">
+      Publication list is temporarily unavailable — see the full record on
+      <a href="https://inspirehep.net/authors/1794691">INSPIRE</a>.
+    </li>
+  )}
+  {list.map((p) => (
+    <li class="pub">
+      <div class="pub-year">{year(p.date)}</div>
+      <div class="pub-body">
+        <a class="pub-title" href={p.inspireUrl}>{p.title}</a>
+        <div class="pub-authors">{authorLine(p.authors)}</div>
+        <div class="pub-meta">
+          {p.journal && <span class="pub-journal">{p.journal}</span>}
+          {p.arxiv && (
+            <a href={p.arxivUrl}>arXiv:{p.arxiv}</a>
+          )}
+          {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
+          {p.citations > 0 && (
+            <span class="pub-cites">{p.citations} citations</span>
+          )}
+        </div>
+      </div>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .pub-list { list-style: none; }
+  .pub {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1.25rem;
+    padding-block: 1.4rem;
+    border-top: 1px solid var(--rule);
+  }
+  .pub:last-child { border-bottom: 1px solid var(--rule); }
+  .pub-year {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    padding-top: 0.2rem;
+  }
+  .pub-title {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    line-height: 1.3;
+  }
+  .pub-title:hover { color: var(--accent); }
+  .pub-authors {
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    margin-top: 0.25rem;
+  }
+  .pub-meta {
+    margin-top: 0.45rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+  }
+  .pub-journal { color: var(--ink-soft); font-style: normal; }
+  .pub-cites { color: var(--ink-faint); }
+  .pub-empty {
+    padding: 1.5rem 0;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+  }
+  @media (max-width: 34rem) {
+    .pub { grid-template-columns: 1fr; gap: 0.35rem; }
+  }
+</style>

@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+const themes = (await getCollection("research")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+
+const tools = [
+  {
+    name: "MadGraph5_aMC@NLO",
+    desc: "The standard automated tool for LHC event generation. Our methods are built to plug into the MadGraph ecosystem.",
+    url: "https://github.com/mg5amcnlo",
+  },
+  {
+    name: "MadGraph7",
+    desc: "The next-generation MadGraph framework, in active development — a target platform for our neural-integration methods.",
+    url: "https://github.com/MadGraphTeam/MadGraph7",
+  },
+  {
+    name: "MadNIS",
+    desc: "Neural importance sampling for Monte Carlo integration of matrix elements — a core piece of the group's neural-integration tooling.",
+    url: "https://madnis.ai",
+  },
+  {
+    name: "NNPDF",
+    desc: "Machine-learning determination of parton distribution functions — a key input and methodological touchstone for ML uncertainties and interpretability in QCD.",
+    url: "https://nnpdf.mi.infn.it/",
+  },
+];
+---
+
+<Base title="Research — ML for High-Energy Physics">
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow rise">Research</p>
+      <h1 class="rise" style="animation-delay:.05s">
+        Neural surrogates &amp; generative models for particle physics.
+      </h1>
+      <p class="lede rise" style="animation-delay:.1s">
+        Simulation sits between theory and data. We use machine learning to
+        accelerate it in the forward direction, to invert it through
+        simulation-based inference, and to probe what the trained models
+        actually represent.
+      </p>
+
+      <hr class="rule" />
+
+      {themes.map(async (t) => {
+        const { Content } = await render(t);
+        return (
+          <article class="theme-block">
+            <h2>{t.data.title}</h2>
+            <div class="prose"><Content /></div>
+          </article>
+        );
+      })}
+
+      <hr class="rule" />
+
+      <div class="section-head"><p class="eyebrow">A thread through all of it: validity</p></div>
+      <div class="prose">
+        <p>
+          Across these directions, one question recurs: when can a
+          machine-learning model in physics actually be trusted? We care about
+          methods that are not just accurate but calibrated, robust, and
+          interpretable. This cross-cutting interest connects our work to
+          community efforts on the validation and statistics of ML in
+          fundamental physics — including the
+          <a href="https://phystat.github.io/Website/"> PhyStat</a> series and
+          the VERaiPHY initiative on robust AI for physics.
+        </p>
+      </div>
+
+      <hr class="rule" />
+
+      <div class="section-head"><p class="eyebrow">Tools we build on &amp; contribute to</p></div>
+      <ul class="tools">
+        {tools.map((tool) => (
+          <li>
+            <a href={tool.url}><h3>{tool.name}</h3></a>
+            <p>{tool.desc}</p>
+          </li>
+        ))}
+      </ul>
+
+      <div class="section-head" style="margin-top:2.5rem">
+        <p class="eyebrow">Networks</p>
+      </div>
+      <p class="prose">
+        The group is part of
+        <a href="https://www.montecarlonet.org/"> MCnet</a>, the international
+        Monte Carlo event generator network, through its Milan node.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .theme-block { margin-block: 2.5rem; }
+  .theme-block h2 { color: var(--accent); margin-bottom: 0.6rem; }
+  .prose :global(p) { max-width: 62ch; }
+  .tools { list-style: none; display: grid; gap: 1.5rem; }
+  .tools li { padding-left: 1rem; border-left: 2px solid var(--accent); }
+  .tools h3 { color: var(--accent); }
+  .tools p { font-size: 1rem; color: var(--ink-soft); max-width: 60ch; }
+</style>

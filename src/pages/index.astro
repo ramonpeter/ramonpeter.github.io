@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import PubList from "../components/PubList.astro";
+import { getCollection } from "astro:content";
+
+const research = (await getCollection("research")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const news = (await getCollection("news"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 4);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+---
+
+<Base title="ML for HEP — Winterhalder Group">
+  <!-- HERO -->
+  <section class="section hero">
+    <div class="wrap">
+      <p class="eyebrow rise">Winterhalder Group · TIFLab · Milano</p>
+      <h1 class="rise" style="animation-delay:.05s">
+        Machine learning for<br />high-energy physics.
+      </h1>
+      <p class="lede rise" style="animation-delay:.12s">
+        We develop and build neural surrogates and generative models for simulation and data analysis in particle physics,
+        while asking what these models are really learning about the underlying physics.
+      </p>
+      <div class="hero-cta rise" style="animation-delay:.18s">
+        <a class="btn btn--accent" href="/research">Our research</a>
+        <a class="btn" href="/projects">Join the group</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH THEMES -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we work on</p>
+      </div>
+      <div class="themes">
+        {research.map((r) => (
+          <a class="theme" href="/research">
+            <h3>{r.data.title}</h3>
+            <p>{r.data.summary}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST PAPERS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Recent publications</p>
+      </div>
+      <PubList limit={5} />
+      <p class="more">
+        <a href="/publications">All publications →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  {news.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Latest news</p>
+        </div>
+        <ul class="news-mini">
+          {news.map((n) => (
+            <li>
+              <span class="news-date">{fmt(n.data.date)}</span>
+              <span>{n.data.title}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="more"><a href="/news">All news →</a></p>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .hero { padding-top: clamp(3rem, 9vw, 7rem); }
+  .hero h1 { margin-top: 0.6rem; }
+  .hero .lede { max-width: 38ch; margin-top: 1.4rem; }
+  .hero-cta { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+
+  .themes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .theme {
+    background: var(--paper);
+    padding: 1.6rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.18s;
+  }
+  .theme:hover { background: var(--accent-soft); }
+  .theme h3 { color: var(--accent); margin-bottom: 0.4rem; }
+  .theme p { font-size: 1rem; color: var(--ink-soft); }
+
+  .more { margin-top: 1.5rem; font-family: var(--mono); font-size: 0.82rem; }
+
+  .news-mini { list-style: none; }
+  .news-mini li {
+    display: flex;
+    gap: 1.5rem;
+    padding-block: 0.85rem;
+    border-top: 1px solid var(--rule);
+  }
+  .news-mini li:last-child { border-bottom: 1px solid var(--rule); }
+  .news-date {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    white-space: nowrap;
+    min-width: 7rem;
+  }
+  @media (max-width: 34rem) {
+    .news-mini li { flex-direction: column; gap: 0.2rem; }
+  }
+</style>

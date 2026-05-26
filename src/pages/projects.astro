@@ -1,0 +1,127 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const kindLabel: Record<string, string> = {
+  master: "Master thesis",
+  phd: "PhD",
+  postdoc: "Postdoc",
+};
+---
+
+<Base title="Join Us — ML for High-Energy Physics">
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow rise">Join us</p>
+      <h1 class="rise" style="animation-delay:.05s">Work with us.</h1>
+      <p class="lede rise" style="animation-delay:.1s">
+        If you are excited by machine learning and want to apply it to real
+        problems in collider physics, there is room for you in the group — at
+        Master, PhD, and postdoc level.
+      </p>
+
+      <div class="rise" style="animation-delay:.14s">
+        <p>
+          Our projects sit at the interface of generative modelling, neural
+          surrogates, and LHC phenomenology. They share a methodological core
+          but differ a lot in flavour: some are mathematically driven, some are
+          engineering- and team-oriented, some are about physics
+          interpretation. We try to match the project to the person.
+        </p>
+        <p>
+          The descriptions below are intentionally high-level — the concrete
+          work plan is developed together with the supervisor once a direction
+          is chosen, and we are happy to discuss variations or hybrid scopes.
+        </p>
+      </div>
+
+      <hr class="rule" />
+
+      <div class="section-head"><p class="eyebrow">Thesis &amp; project directions</p></div>
+      <ul class="proj-list">
+        {projects.map((p) => (
+          <li class="proj">
+            <div class="proj-tag">
+              <span class={`pill ${p.data.open ? "pill--open" : ""}`}>
+                {p.data.open ? "Open" : "Filled"}
+              </span>
+              <span class="pkind">{kindLabel[p.data.kind] ?? p.data.kind}</span>
+            </div>
+            <div class="proj-body">
+              <h3>{p.data.title}</h3>
+              <p class="proj-blurb">{p.data.blurb}</p>
+              {p.data.skills.length > 0 && (
+                <div class="skills">
+                  {p.data.skills.map((s) => <span class="skill">{s}</span>)}
+                </div>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      <hr class="rule" />
+
+      <!-- HOW TO APPLY -->
+      <div class="section-head"><p class="eyebrow">How to get in touch</p></div>
+      <div class="apply">
+        <div class="apply-col">
+          <h3>Master students</h3>
+          <p>
+            Email a short note about your background and which direction
+            interests you. No need for a polished proposal — curiosity and some
+            programming experience are the main things.
+          </p>
+        </div>
+        <div class="apply-col">
+          <h3>PhD &amp; postdoc</h3>
+          <p>
+            Positions depend on current funding. Reach out with a CV and a
+            paragraph on your interests; if there is a fit, we will tell you
+            about open calls and fellowships.
+          </p>
+        </div>
+      </div>
+
+      <p class="contact-cta">
+        <a class="btn btn--accent" href="mailto:ramon.winterhalder@unimi.it">
+          ramon.winterhalder@unimi.it
+        </a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .proj-list { list-style: none; display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .proj { background: var(--paper); padding: 1.75rem; display: grid; grid-template-columns: 8rem 1fr; gap: 1.5rem; }
+  .proj-tag { display: flex; flex-direction: column; gap: 0.5rem; }
+  .pill {
+    font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 0.25em 0.6em;
+    border: 1px solid var(--ink-faint); color: var(--ink-faint);
+    width: fit-content;
+  }
+  .pill--open { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .pkind { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-faint); }
+  .proj h3 { color: var(--accent); }
+  .proj-blurb { font-size: 1.05rem; color: var(--ink-soft); margin-top: 0.3rem; }
+  .prose :global(p) { font-size: 1rem; }
+  .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.9rem; }
+  .skill {
+    font-family: var(--mono); font-size: 0.7rem;
+    padding: 0.2em 0.6em; background: var(--paper-2); color: var(--ink-soft);
+  }
+  .apply { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .apply-col h3 { color: var(--accent); margin-bottom: 0.4rem; }
+  .apply-col p { font-size: 1rem; color: var(--ink-soft); }
+  .contact-cta { margin-top: 2rem; }
+  @media (max-width: 38rem) {
+    .proj { grid-template-columns: 1fr; gap: 0.8rem; }
+    .proj-tag { flex-direction: row; }
+    .apply { grid-template-columns: 1fr; }
+  }
+</style>

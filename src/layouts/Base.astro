@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Machine learning for high-energy physics — research group of Ramon Winterhalder, TIFLab, Università degli Studi di Milano & INFN." } = Astro.props;
+
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/research", label: "Research" },
+  { href: "/publications", label: "Publications" },
+  { href: "/people", label: "People" },
+  { href: "/projects", label: "Join Us" },
+  { href: "/news", label: "News" },
+];
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">ML<span>·</span>HEP</a>
+        <nav class="nav" aria-label="Primary">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={path === n.href ? "page" : undefined}>
+              {n.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>Ramon Winterhalder · TIFLab · Università degli Studi di Milano &amp; INFN Milano</span>
+        <span>
+          <a href="https://inspirehep.net/authors/1794691">INSPIRE</a> ·
+          <a href="mailto:ramon.winterhalder@unimi.it">Email</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+const news = (await getCollection("news")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+const fmt = (d: Date) =>
+  d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+
+const tagLabel: Record<string, string> = {
+  paper: "New paper",
+  people: "People",
+  talk: "Talk",
+  award: "Award",
+  misc: "News",
+};
+---
+
+<Base title="News — ML for High-Energy Physics">
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow rise">News</p>
+      <h1 class="rise" style="animation-delay:.05s">News</h1>
+      <p class="lede rise" style="animation-delay:.1s">
+        New papers, new people, talks, and the occasional milestone.
+      </p>
+      <hr class="rule" />
+      <ul class="news">
+        {news.map(async (n) => {
+          const { Content } = await render(n);
+          return (
+            <li class="item">
+              <div class="meta">
+                <span class="date">{fmt(n.data.date)}</span>
+                <span class={`tag tag--${n.data.tag}`}>{tagLabel[n.data.tag]}</span>
+              </div>
+              <div>
+                <h3>
+                  {n.data.link
+                    ? <a href={n.data.link}>{n.data.title}</a>
+                    : n.data.title}
+                </h3>
+                <div class="prose"><Content /></div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .news { list-style: none; }
+  .item {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  .item:last-child { border-bottom: 1px solid var(--rule); }
+  .meta { display: flex; flex-direction: column; gap: 0.4rem; }
+  .date { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); }
+  .tag {
+    font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.06em;
+    text-transform: uppercase; width: fit-content;
+    padding: 0.2em 0.55em; background: var(--paper-2); color: var(--ink-soft);
+  }
+  .tag--paper { background: var(--accent-soft); color: var(--accent); }
+  .item h3 { font-size: 1.15rem; }
+  .prose :global(p) { font-size: 1rem; color: var(--ink-soft); }
+  @media (max-width: 36rem) {
+    .item { grid-template-columns: 1fr; gap: 0.5rem; }
+    .meta { flex-direction: row; align-items: center; }
+  }
+</style>

@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+import PubList from "../components/PubList.astro";
+import pubs from "../data/publications.json";
+
+const total = pubs.length;
+---
+
+<Base title="Publications — ML for High-Energy Physics">
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow rise">Publications</p>
+      <h1 class="rise" style="animation-delay:.05s">Publications</h1>
+      <p class="lede rise" style="animation-delay:.1s">
+        This list is generated automatically from INSPIRE-HEP and updated
+        whenever the site rebuilds. {total > 0 && `${total} records shown.`}
+      </p>
+      <p class="rise" style="animation-delay:.14s" style="margin-top:1rem">
+        <a class="btn btn--accent" href="https://inspirehep.net/authors/1794691?ui-citation-summary=true">
+          Full record &amp; citation summary on INSPIRE →
+        </a>
+      </p>
+      <hr class="rule" />
+      <PubList />
+    </div>
+  </section>
+</Base>

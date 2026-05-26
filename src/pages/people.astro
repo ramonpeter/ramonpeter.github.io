@@ -1,0 +1,199 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+const all = await getCollection("people");
+const groups = [
+  { key: "postdoc", label: "Postdocs" },
+  { key: "phd", label: "PhD Students" },
+  { key: "master", label: "Master Students" },
+  { key: "alumni", label: "Alumni" },
+] as const;
+
+const byRole = (role: string) =>
+  all
+    .filter((p) => p.data.role === role)
+    .sort((a, b) => a.data.order - b.data.order);
+
+const pi = all.find((p) => p.data.role === "pi");
+const PiBio = pi ? (await render(pi)).Content : null;
+
+function links(d: Record<string, any>) {
+  return [
+    d.email && { label: "email", href: `mailto:${d.email}` },
+    d.inspire && { label: "inspire", href: d.inspire },
+    d.scholar && { label: "scholar", href: d.scholar },
+    d.orcid && { label: "orcid", href: d.orcid },
+    d.github && { label: "github", href: d.github },
+    d.unimi && { label: "unimi", href: d.unimi },
+  ].filter(Boolean) as { label: string; href: string }[];
+}
+---
+
+<Base title="People — ML for High-Energy Physics">
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow rise">People</p>
+      <h1 class="rise" style="animation-delay:.05s">The group</h1>
+
+      {pi && (
+        <div class="pi rise" style="animation-delay:.1s">
+          <div class="pi-photo">
+            {pi.data.photo
+              ? <img src={pi.data.photo} alt={pi.data.name} />
+              : <span>{pi.data.name.split(" ").map((w) => w[0]).join("")}</span>}
+            {pi.data.note && <p class="pi-note">{pi.data.note}</p>}
+          </div>
+          <div class="pi-text">
+            <h2>{pi.data.name}</h2>
+            {pi.data.title && <p class="pi-title">{pi.data.title}</p>}
+            <div class="prose">{PiBio && <PiBio />}</div>
+            <div class="plinks">
+              {links(pi.data).map((l) => <a href={l.href}>{l.label}</a>)}
+            </div>
+            {pi.data.history && (
+              <div class="history">
+                {pi.data.history.map((h) => (
+                  <div class="hist-group">
+                    <p class="eyebrow">{h.group}</p>
+                    <ul>
+                      {h.items.map((it) => (
+                        <li>
+                          <span class="hist-years">{it.years}</span>
+                          <span class="hist-main">
+                            <strong>{it.role}</strong>, {it.place}
+                            {it.detail && <span class="hist-detail">{it.detail}</span>}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {groups.map((g) => {
+        const members = byRole(g.key);
+        if (members.length === 0) return null;
+        return (
+          <div class="role-block">
+            <div class="section-head"><p class="eyebrow">{g.label}</p></div>
+            <ul class="people">
+              {members.map((m) => (
+                <li class="person">
+                  <div class="avatar">
+                    {m.data.photo
+                      ? <img src={m.data.photo} alt={m.data.name} />
+                      : <span>{m.data.name.split(" ").map((w) => w[0]).join("")}</span>}
+                  </div>
+                  <div>
+                    <h3>{m.data.name}</h3>
+                    {m.data.title && <p class="ptitle">{m.data.title}</p>}
+                    <div class="plinks">
+                      {links(m.data).map((l) => <a href={l.href}>{l.label}</a>)}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* --- PI block --- */
+  .pi {
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    gap: 2.5rem;
+    margin-block: 2.5rem 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .pi-photo img {
+    width: 13rem; height: 13rem;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+  }
+  .pi-photo span {
+    display: grid; place-items: center;
+    width: 13rem; height: 13rem;
+    background: var(--accent-soft); color: var(--accent);
+    font-family: var(--mono); font-size: 2rem;
+  }
+  .pi-note {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-top: 0.7rem;
+    line-height: 1.45;
+  }
+  .pi-text h2 { color: var(--accent); }
+  .pi-title { font-size: 1rem; color: var(--ink-soft); margin: 0.2rem 0 0.8rem; }
+  .prose :global(p) { max-width: 56ch; font-size: 1.02rem; }
+
+  /* --- CV timeline --- */
+  .history {
+    margin-top: 1.75rem;
+    display: grid;
+    gap: 1.5rem;
+  }
+  .hist-group .eyebrow { margin-bottom: 0.6rem; display: block; }
+  .hist-group ul { list-style: none; }
+  .hist-group li {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 1rem;
+    padding-block: 0.4rem;
+    border-top: 1px solid var(--rule);
+  }
+  .hist-group li:first-of-type { border-top: 0; }
+  .hist-years {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    padding-top: 0.15rem;
+    white-space: nowrap;
+  }
+  .hist-main { font-size: 0.98rem; }
+  .hist-detail {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  /* --- member cards --- */
+  .role-block { margin-block: 2.5rem; }
+  .people {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1.75rem;
+  }
+  .person { display: flex; gap: 1rem; align-items: flex-start; }
+  .avatar {
+    width: 4rem; height: 4rem; flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    display: grid; place-items: center;
+    overflow: hidden;
+    font-family: var(--mono); font-size: 1rem; color: var(--accent);
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .person h3 { font-size: 1.1rem; }
+  .ptitle { font-size: 0.95rem; color: var(--ink-soft); margin: 0.15rem 0; }
+
+  .plinks { display: flex; flex-wrap: wrap; gap: 0.8rem; font-family: var(--mono); font-size: 0.72rem; }
+
+  @media (max-width: 38rem) {
+    .pi { grid-template-columns: 1fr; gap: 1.25rem; }
+    .pi-photo img, .pi-photo span { width: 9rem; height: 9rem; }
+  }
+</style>
