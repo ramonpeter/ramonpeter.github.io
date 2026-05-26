@@ -9,7 +9,7 @@ scholar: "https://scholar.google.com/citations?user=AXezCSUAAAAJ&hl"
 github: "https://github.com/ramonpeter"
 orcid: "https://orcid.org/0000-0002-9902-578X"
 unimi: "https://www.unimi.it/en/ugov/person/ramon-winterhalder"
-note: "A Black Forest native and SC Freiburg supporter, when I’m not working on physics, you may find me in a pub, exploring new places, or chasing a new rollercoaster."
+note: "A Black Forest native and SC Freiburg supporter, when I’m not working on physics, you may find me in a pub, exploring new places, or riding a rollercoaster."
 history:
   - group: "Brief Academic History"
     items:
