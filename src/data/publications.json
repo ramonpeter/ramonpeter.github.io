@@ -32,7 +32,7 @@
     "arxivUrl": "https://arxiv.org/abs/2605.10378",
     "doi": null,
     "journal": null,
-    "citations": 0,
+    "citations": 1,
     "inspireUrl": "https://inspirehep.net/literature/3154167",
     "type": "article"
   },
@@ -53,7 +53,7 @@
     "arxivUrl": "https://arxiv.org/abs/2603.22407",
     "doi": null,
     "journal": null,
-    "citations": 3,
+    "citations": 5,
     "inspireUrl": "https://inspirehep.net/literature/3133845",
     "type": "article"
   },
@@ -197,7 +197,7 @@
     "arxivUrl": "https://arxiv.org/abs/2408.01486",
     "doi": "10.21468/SciPostPhys.18.1.017",
     "journal": "SciPost Phys. 18 (2025)",
-    "citations": 41,
+    "citations": 42,
     "inspireUrl": "https://inspirehep.net/literature/2814426",
     "type": "article"
   },
@@ -234,7 +234,7 @@
     "arxivUrl": "https://arxiv.org/abs/2311.01548",
     "doi": "10.21468/SciPostPhys.17.1.023",
     "journal": "SciPost Phys. 17 (2024)",
-    "citations": 68,
+    "citations": 70,
     "inspireUrl": "https://inspirehep.net/literature/2718812",
     "type": "article"
   },
@@ -253,7 +253,7 @@
     "arxivUrl": "https://arxiv.org/abs/2310.07752",
     "doi": "10.21468/SciPostPhys.17.5.129",
     "journal": "SciPost Phys. 17 (2024)",
-    "citations": 49,
+    "citations": 51,
     "inspireUrl": "https://inspirehep.net/literature/2709868",
     "type": "article"
   },
@@ -271,7 +271,7 @@
     "arxivUrl": "https://arxiv.org/abs/2308.16716",
     "doi": "10.1007/JHEP11(2023)022",
     "journal": "JHEP 11 (2023)",
-    "citations": 15,
+    "citations": 16,
     "inspireUrl": "https://inspirehep.net/literature/2692517",
     "type": "article"
   },
@@ -309,7 +309,7 @@
     "arxivUrl": "https://arxiv.org/abs/2212.06172",
     "doi": "10.21468/SciPostPhys.15.4.141",
     "journal": "SciPost Phys. 15 (2023)",
-    "citations": 87,
+    "citations": 90,
     "inspireUrl": "https://inspirehep.net/literature/2613846",
     "type": "article"
   },
@@ -620,7 +620,7 @@
     "arxivUrl": "https://arxiv.org/abs/2203.07460",
     "doi": "10.21468/SciPostPhys.14.4.079",
     "journal": "SciPost Phys. 14 (2023)",
-    "citations": 146,
+    "citations": 147,
     "inspireUrl": "https://inspirehep.net/literature/2052497",
     "type": "article"
   },
@@ -690,7 +690,7 @@
     "arxivUrl": "https://arxiv.org/abs/2109.13243",
     "doi": "10.1088/1748-0221/17/01/P01024",
     "journal": "JINST 17 (2022)",
-    "citations": 61,
+    "citations": 62,
     "inspireUrl": "https://inspirehep.net/literature/1932459",
     "type": "article"
   },
@@ -747,7 +747,7 @@
     "arxivUrl": "https://arxiv.org/abs/2006.06685",
     "doi": "10.21468/SciPostPhys.9.5.074",
     "journal": "SciPost Phys. 9 (2020)",
-    "citations": 138,
+    "citations": 139,
     "inspireUrl": "https://inspirehep.net/literature/1800956",
     "type": "article"
   },
@@ -783,7 +783,7 @@
     "arxivUrl": "https://arxiv.org/abs/1912.00477",
     "doi": "10.21468/SciPostPhys.8.4.070",
     "journal": "SciPost Phys. 8 (2020)",
-    "citations": 136,
+    "citations": 139,
     "inspireUrl": "https://inspirehep.net/literature/1768021",
     "type": "article"
   },
@@ -800,7 +800,7 @@
     "arxivUrl": "https://arxiv.org/abs/1907.03764",
     "doi": "10.21468/SciPostPhys.7.6.075",
     "journal": "SciPost Phys. 7 (2019)",
-    "citations": 179,
+    "citations": 182,
     "inspireUrl": "https://inspirehep.net/literature/1742987",
     "type": "article"
   }

@@ -21,6 +21,24 @@
 
   --maxw: 60rem;
   --gap: clamp(1.5rem, 4vw, 3rem);
+
+  color-scheme: light;
+}
+
+/* ---- dark theme: same editorial palette, inverted ----
+   A warm charcoal "ink paper", with the physics blue lifted
+   so it stays legible against a dark ground. */
+:root[data-theme="dark"] {
+  --paper: #14130f;
+  --paper-2: #1e1c16;
+  --ink: #ece9e1;
+  --ink-soft: #b4b0a5;
+  --ink-faint: #7e7a70;
+  --rule: #34322b;
+  --accent: #6ea8e0;        /* lifted physics blue */
+  --accent-soft: #1c2a3a;
+
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -112,6 +130,24 @@ p { margin-block: 0.8em; }
 }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--accent); }
 
+/* ---- theme toggle ---- */
+.header-right { display: flex; align-items: center; gap: 1.4rem; }
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; padding: 0;
+  border: 1px solid var(--rule); border-radius: 50%;
+  background: transparent; color: var(--ink-soft);
+  cursor: pointer;
+  transition: color 0.18s, border-color 0.18s, background 0.18s;
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle svg { width: 1rem; height: 1rem; display: block; }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+
 /* ---- footer ---- */
 .site-footer {
   border-top: 1px solid var(--rule);
@@ -127,4 +163,9 @@ p { margin-block: 0.8em; }
 
 @media (prefers-reduced-motion: reduce) {
   .rise { animation: none; }
+}
+
+/* smooth the light/dark hand-off */
+@media (prefers-reduced-motion: no-preference) {
+  body { transition: background 0.3s ease, color 0.3s ease; }
 }
