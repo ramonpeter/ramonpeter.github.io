@@ -1,5 +1,96 @@
 [
   {
+    "id": 3192148,
+    "title": "VERaiPHY -- Validation & Evaluation for Robust AI in PHYsics",
+    "authors": [
+      "Grosso, Gaia",
+      "Winterhalder, Ramon",
+      "Brenner, Lydia",
+      "Lyons, Louis",
+      "Plehn, Tilman"
+    ],
+    "date": "2026-08-18",
+    "arxiv": "2608.17724",
+    "arxivUrl": "https://arxiv.org/abs/2608.17724",
+    "doi": null,
+    "journal": null,
+    "citations": 0,
+    "inspireUrl": "https://inspirehep.net/literature/3192148",
+    "type": "article"
+  },
+  {
+    "id": 3190791,
+    "title": "Unifying Generative Models with Path Integrals",
+    "authors": [
+      "Winterhalder, Ramon"
+    ],
+    "date": "2026-08-12",
+    "arxiv": "2608.12438",
+    "arxivUrl": "https://arxiv.org/abs/2608.12438",
+    "doi": null,
+    "journal": null,
+    "citations": 0,
+    "inspireUrl": "https://inspirehep.net/literature/3190791",
+    "type": "article"
+  },
+  {
+    "id": 3189205,
+    "title": "The Living Guide of Machine Learning for Particle Physics",
+    "authors": [
+      "Krause, Claudius",
+      "Winterhalder, Ramon",
+      "Feickert, Matthew",
+      "Nachman, Benjamin"
+    ],
+    "date": "2026-08-10",
+    "arxiv": "2608.09531",
+    "arxivUrl": "https://arxiv.org/abs/2608.09531",
+    "doi": null,
+    "journal": null,
+    "citations": 1,
+    "inspireUrl": "https://inspirehep.net/literature/3189205",
+    "type": "article"
+  },
+  {
+    "id": 3183517,
+    "title": "Neural Control Variates at LO and NLO",
+    "authors": [
+      "Heimel, Theo",
+      "Plehn, Tilman",
+      "Revelli, Rebecca",
+      "Vent, Sophia",
+      "Winterhalder, Ramon"
+    ],
+    "date": "2026-07-26",
+    "arxiv": "2607.23591",
+    "arxivUrl": "https://arxiv.org/abs/2607.23591",
+    "doi": null,
+    "journal": null,
+    "citations": 2,
+    "inspireUrl": "https://inspirehep.net/literature/3183517",
+    "type": "article"
+  },
+  {
+    "id": 3177396,
+    "title": "Interpreting Parton Distributions with Shapley Values",
+    "authors": [
+      "Bonnet-Guerrini, Raphaël",
+      "Carrazza, Stefano",
+      "Forte, Stefano",
+      "Groenendijk, Eva",
+      "Piuri, Vincenzo",
+      "Winterhalder, Ramon"
+    ],
+    "date": "2026-07-02",
+    "arxiv": "2607.02647",
+    "arxivUrl": "https://arxiv.org/abs/2607.02647",
+    "doi": null,
+    "journal": null,
+    "citations": 0,
+    "inspireUrl": "https://inspirehep.net/literature/3177396",
+    "type": "article"
+  },
+  {
     "id": 3156741,
     "title": "The Monte Carlo Ecosystem in High-Energy Physics: A Primer",
     "authors": [
@@ -15,7 +106,7 @@
     "arxivUrl": "https://arxiv.org/abs/2605.16036",
     "doi": null,
     "journal": null,
-    "citations": 0,
+    "citations": 2,
     "inspireUrl": "https://inspirehep.net/literature/3156741",
     "type": "article"
   },
@@ -32,7 +123,7 @@
     "arxivUrl": "https://arxiv.org/abs/2605.10378",
     "doi": null,
     "journal": null,
-    "citations": 1,
+    "citations": 6,
     "inspireUrl": "https://inspirehep.net/literature/3154167",
     "type": "article"
   },
@@ -53,7 +144,7 @@
     "arxivUrl": "https://arxiv.org/abs/2603.22407",
     "doi": null,
     "journal": null,
-    "citations": 5,
+    "citations": 11,
     "inspireUrl": "https://inspirehep.net/literature/3133845",
     "type": "article"
   },
@@ -70,7 +161,7 @@
     "arxivUrl": "https://arxiv.org/abs/2602.06895",
     "doi": null,
     "journal": null,
-    "citations": 5,
+    "citations": 11,
     "inspireUrl": "https://inspirehep.net/literature/3117326",
     "type": "article"
   },
@@ -86,9 +177,9 @@
     "date": "2025-12-11",
     "arxiv": "2512.11036",
     "arxivUrl": "https://arxiv.org/abs/2512.11036",
-    "doi": null,
-    "journal": null,
-    "citations": 9,
+    "doi": "10.21468/SciPostPhys.20.6.154",
+    "journal": "SciPost Phys. 20 (2026)",
+    "citations": 14,
     "inspireUrl": "https://inspirehep.net/literature/3092484",
     "type": "article"
   },
@@ -105,9 +196,9 @@
     "date": "2025-09-08",
     "arxiv": "2509.07068",
     "arxivUrl": "https://arxiv.org/abs/2509.07068",
-    "doi": null,
-    "journal": null,
-    "citations": 11,
+    "doi": "10.21468/SciPostPhys.21.1.001",
+    "journal": "SciPost Phys. 21 (2026)",
+    "citations": 17,
     "inspireUrl": "https://inspirehep.net/literature/2968085",
     "type": "article"
   },
@@ -125,7 +216,7 @@
     "arxivUrl": "https://arxiv.org/abs/2509.00155",
     "doi": "10.21468/SciPostPhys.20.3.083",
     "journal": "SciPost Phys. 20 (2026)",
-    "citations": 14,
+    "citations": 20,
     "inspireUrl": "https://inspirehep.net/literature/2965790",
     "type": "article"
   },
@@ -142,7 +233,7 @@
     "arxivUrl": "https://arxiv.org/abs/2507.21214",
     "doi": "10.21468/SciPostPhys.20.3.084",
     "journal": "SciPost Phys. 20 (2026)",
-    "citations": 10,
+    "citations": 15,
     "inspireUrl": "https://inspirehep.net/literature/2955163",
     "type": "article"
   },
@@ -159,7 +250,7 @@
     "arxivUrl": "https://arxiv.org/abs/2504.03387",
     "doi": "10.21468/SciPostPhys.20.2.038",
     "journal": "SciPost Phys. 20 (2026)",
-    "citations": 8,
+    "citations": 9,
     "inspireUrl": "https://inspirehep.net/literature/2908049",
     "type": "article"
   },
@@ -179,7 +270,7 @@
     "arxivUrl": "https://arxiv.org/abs/2412.12069",
     "doi": "10.21468/SciPostPhysCore.8.4.073",
     "journal": "SciPost Phys.Core 8 (2025)",
-    "citations": 27,
+    "citations": 32,
     "inspireUrl": "https://inspirehep.net/literature/2860406",
     "type": "article"
   },
@@ -197,7 +288,7 @@
     "arxivUrl": "https://arxiv.org/abs/2408.01486",
     "doi": "10.21468/SciPostPhys.18.1.017",
     "journal": "SciPost Phys. 18 (2025)",
-    "citations": 42,
+    "citations": 49,
     "inspireUrl": "https://inspirehep.net/literature/2814426",
     "type": "article"
   },
@@ -234,7 +325,7 @@
     "arxivUrl": "https://arxiv.org/abs/2311.01548",
     "doi": "10.21468/SciPostPhys.17.1.023",
     "journal": "SciPost Phys. 17 (2024)",
-    "citations": 70,
+    "citations": 79,
     "inspireUrl": "https://inspirehep.net/literature/2718812",
     "type": "article"
   },
@@ -253,7 +344,7 @@
     "arxivUrl": "https://arxiv.org/abs/2310.07752",
     "doi": "10.21468/SciPostPhys.17.5.129",
     "journal": "SciPost Phys. 17 (2024)",
-    "citations": 51,
+    "citations": 53,
     "inspireUrl": "https://inspirehep.net/literature/2709868",
     "type": "article"
   },
@@ -309,7 +400,7 @@
     "arxivUrl": "https://arxiv.org/abs/2212.06172",
     "doi": "10.21468/SciPostPhys.15.4.141",
     "journal": "SciPost Phys. 15 (2023)",
-    "citations": 90,
+    "citations": 99,
     "inspireUrl": "https://inspirehep.net/literature/2613846",
     "type": "article"
   },
@@ -329,7 +420,7 @@
     "arxivUrl": "https://arxiv.org/abs/2211.01421",
     "doi": null,
     "journal": null,
-    "citations": 106,
+    "citations": 117,
     "inspireUrl": "https://inspirehep.net/literature/2175955",
     "type": "article"
   },
@@ -555,7 +646,7 @@
     "arxivUrl": "https://arxiv.org/abs/2203.11110",
     "doi": "10.21468/SciPostPhys.16.5.130",
     "journal": "SciPost Phys. 16 (2024)",
-    "citations": 192,
+    "citations": 204,
     "inspireUrl": "https://inspirehep.net/literature/2055764",
     "type": "article"
   },
@@ -620,7 +711,7 @@
     "arxivUrl": "https://arxiv.org/abs/2203.07460",
     "doi": "10.21468/SciPostPhys.14.4.079",
     "journal": "SciPost Phys. 14 (2023)",
-    "citations": 147,
+    "citations": 157,
     "inspireUrl": "https://inspirehep.net/literature/2052497",
     "type": "article"
   },
@@ -663,7 +754,7 @@
     "arxivUrl": "https://arxiv.org/abs/2112.09145",
     "doi": "10.21468/SciPostPhys.12.4.129",
     "journal": "SciPost Phys. 12 (2022)",
-    "citations": 60,
+    "citations": 64,
     "inspireUrl": "https://inspirehep.net/literature/1992938",
     "type": "article"
   },
@@ -747,7 +838,7 @@
     "arxivUrl": "https://arxiv.org/abs/2006.06685",
     "doi": "10.21468/SciPostPhys.9.5.074",
     "journal": "SciPost Phys. 9 (2020)",
-    "citations": 139,
+    "citations": 144,
     "inspireUrl": "https://inspirehep.net/literature/1800956",
     "type": "article"
   },
@@ -783,7 +874,7 @@
     "arxivUrl": "https://arxiv.org/abs/1912.00477",
     "doi": "10.21468/SciPostPhys.8.4.070",
     "journal": "SciPost Phys. 8 (2020)",
-    "citations": 139,
+    "citations": 142,
     "inspireUrl": "https://inspirehep.net/literature/1768021",
     "type": "article"
   },
@@ -800,7 +891,7 @@
     "arxivUrl": "https://arxiv.org/abs/1907.03764",
     "doi": "10.21468/SciPostPhys.7.6.075",
     "journal": "SciPost Phys. 7 (2019)",
-    "citations": 182,
+    "citations": 189,
     "inspireUrl": "https://inspirehep.net/literature/1742987",
     "type": "article"
   }

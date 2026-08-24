@@ -7,8 +7,7 @@ photo: "/people/raphael.jpg"
 inspire: "https://inspirehep.net/authors/3109592"
 orcid: "https://orcid.org/0009-0006-5127-7394"
 github: "https://github.com/rbonnetguerrini"
-website: https://rbonnetguerrini.github.io
-order: 1
+order: 0
 ---
 
 Raphaël works on interpretable and explainable machine learning for physics, including Shapley-value attributions for parton distributions.
