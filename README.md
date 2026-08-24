@@ -1,6 +1,6 @@
 # ML for LHC Physics — group website
 
-Astro site. Publications are fetched from INSPIRE-HEP at build time.
+Publications are fetched from INSPIRE-HEP at build time.
 
 ## Local development
 ```
