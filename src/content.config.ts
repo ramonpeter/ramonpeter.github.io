@@ -5,7 +5,7 @@ const people = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/people" }),
   schema: z.object({
     name: z.string(),
-    role: z.enum(["pi", "postdoc", "phd", "master", "alumni"]),
+    role: z.enum(["pi", "postdoc", "phd", "master", "visiting", "alumni"]),
     title: z.string().optional(),
     photo: z.string().optional(),
     email: z.string().optional(),
